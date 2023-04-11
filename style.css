@@ -146,10 +146,11 @@ header{
   border-radius: 5px;
   text-align: center;
   z-index: 10;
-  transition: left 800ms ease;
 }
 .show-box{
   left: 50%;
+  transition: left 800ms ease;
+
 }
 .menu-links{
   margin-bottom: 2rem;
