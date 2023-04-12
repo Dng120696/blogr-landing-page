@@ -414,8 +414,13 @@ footer ul li:not(:first-child,:last-child){
   }
   .button .btn-sign-up{
     margin-left: 4rem;
+    background: var(--White);
+    color: var(--Light-red-1);
   }
- 
+  .button .btn-sign-up:hover{
+    background: var(--Very-light-red-1);
+    color: var(--White);
+  }
   .btn-log-in{
     color: var(--White);
   }
