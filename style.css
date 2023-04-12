@@ -88,6 +88,15 @@ h2,h3,p{
 .hidden{
   display: none;
 }
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
 header{
   color: var(--White);
   border-radius: 0 0 0 9rem;
@@ -116,6 +125,7 @@ header{
   width: 3.2rem;
   height: 3.2rem;
   cursor: pointer;
+  z-index: 3;
 }
 .open-menu{
   position: absolute;
@@ -145,6 +155,7 @@ header{
   border-radius: 5px;
   text-align: center;
   z-index: 10;
+  box-shadow: 5px 5px 20rem rgba(0,0,0,0.2);
 }
 .show-box{
   left: 50%;
@@ -388,6 +399,7 @@ footer ul li:not(:first-child,:last-child){
     justify-content: space-between;
     padding: 0;
     padding-left: 15rem;
+    box-shadow: none;
   }
   .menu-links{
     margin-bottom: 0;
