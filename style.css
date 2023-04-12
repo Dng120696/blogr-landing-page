@@ -368,6 +368,7 @@ footer ul li:not(:first-child,:last-child){
 }
 
 @media (min-width:1000px) {
+
   .nav-menu div.flex{
     flex-direction: row;
     justify-content: space-between;
@@ -506,6 +507,9 @@ footer ul li:not(:first-child,:last-child){
   }
   .illustration-laptop-mobile,
   .illustration-editor-mobile{
+    display: none;
+  }
+  .overlay{
     display: none;
   }
 }
