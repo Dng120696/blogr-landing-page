@@ -7,13 +7,22 @@ const box = document.querySelector('.box');
 const menuLinks = document.querySelectorAll('.menu-links');
 const links = document.querySelector('.links');
 
-console.log(menuLinks);
-menu.addEventListener('click',() =>{
 
-  openMenu.classList.toggle('hidden');
-  closeMenu.classList.toggle('hidden');
-  box.classList.toggle('show-box');
+openMenu.addEventListener('click',() =>{
+
+  openMenu.classList.add('hidden');
+  closeMenu.classList.remove('hidden');
+  box.classList.add('show-box');
+  box.classList.remove('hide-box');
 });
+
+closeMenu.addEventListener('click',() =>{
+
+  openMenu.classList.remove('hidden');
+  closeMenu.classList.add('hidden');
+  box.classList.add('hide-box');
+  box.classList.remove('show-box');
+})
 
 for(let i = 0 ; i < menuLinks.length;i++){
   menuLinks[i].addEventListener('click',() => {

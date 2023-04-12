@@ -6,7 +6,6 @@
   --ff-secondary: 'Ubuntu', sans-serif;
 
   /* ### Primary *
-
   /* (CTA text) */
 --Light-red-1 : hsl(356, 100%, 66%);
 
@@ -149,6 +148,11 @@ header{
 }
 .show-box{
   left: 50%;
+  transition: left 800ms ease;
+
+}
+.hide-box{
+  left: -100%;
   transition: left 800ms ease;
 
 }
@@ -415,7 +419,9 @@ footer ul li:not(:first-child,:last-child){
   .btn-log-in{
     color: var(--White);
   }
-
+  .links{
+    margin-top:0.5rem;
+  }
   
   .menu-links:hover .links{
     display: block;
