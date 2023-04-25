@@ -55,7 +55,7 @@ html{
 body{
   font-family: var(--ff-primary);
   min-height: 100vh;
-
+  overflow-x: hidden;
 }
 h2{
   font-size: clamp(2.4rem,2.5vw,2.8rem);
@@ -156,17 +156,14 @@ header{
   text-align: center;
   z-index: 10;
   box-shadow: 5px 5px 20rem rgba(0,0,0,0.2);
+  transition: left 1s ease;
 }
 .show-box{
   left: 50%;
-  transition: left 800ms ease;
+  transition: left 1s ease;
 
 }
-.hide-box{
-  left: -100%;
-  transition: left 800ms ease;
 
-}
 .menu-links{
   margin-bottom: 2rem;
 }
